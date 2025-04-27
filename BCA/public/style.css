@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 300px;
+    transition: width 0.3s ease;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of videos to next line if space runs out */
+    justify-content: center; /* Centers the videos horizontally */
+    gap: 20px; /* Adds space between videos */
+    margin-top: 20px;
+  }
+
+.video{
+    width: 30%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+video{
+    width: 100%;
+    display: block;
+}
+
+.upload-form {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+  
+  .upload-form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .upload-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-form button:hover {
+    background-color: #45a049;
+  }
